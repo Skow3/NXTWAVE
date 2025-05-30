@@ -1,0 +1,31 @@
+PYTHON
+
+import math as m
+class Solution:
+    def manipulateArray(self, arr, n, k):
+        lenv = m.ceil(n/2)
+        for _ in range(n):
+            if _ == (lenv-1):
+                print(arr[_]*k, end=" ")
+                continue
+            print(arr[_], end=" ")
+        pass
+
+TO CALL :
+s = Solution()
+ans = s.manipulateArray(arr,len(arr),k)
+
+example :
+k=3 
+arr = [2,4,6,8,10]
+
+Now the learning here is that how to print the values in a for loop in the same line
+So we can do that either by 
+USING end
+which is a parameter of the print function
+Method = print(x, end=" ")
+
+SOLUTION 2 :
+
+We can use an array to store the final ans and print it using 
+print(*arr)
