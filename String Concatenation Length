@@ -1,0 +1,7 @@
+class solution:
+    def lengthAfterConcat(self, n, arr):
+        v=0
+        for _ in arr:
+            v+= len(_)
+        return v
+    
